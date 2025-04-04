@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on darwin)" generated="2025-02-27T14:58:49.264579" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Youtube" source="/Users/karn.u/YouTube_Automation/tests/test_youtube.robot">
+<test id="s1-t1" name="Search, Open Channel, Play Video and Capture Screenshot" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:58:49.555548" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-27T14:58:49.555221" elapsed="8.242441"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-27T14:58:57.799725" elapsed="0.562842"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:58:59.363748" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:58:58.362916" elapsed="1.001016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:58:59.365331" level="INFO">Typing text 'Mum Memories' into text field 'name=search_query'.</msg>
+<arg>name=search_query</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:58:59.364361" elapsed="0.233072"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:58:59.598440" level="INFO">Sending key(s) ('ENTER',) to name=search_query element.</msg>
+<msg time="2025-02-27T14:58:59.886059" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-02-27T14:58:59.886196" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=search_query</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-27T14:58:59.597793" elapsed="0.332571"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:01.931214" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:58:59.930675" elapsed="2.000705"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=(//a[@id="main-link"])[1]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T14:59:01.931831" elapsed="0.027081"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:01.959432" level="INFO">Clicking element 'xpath=(//a[@id="main-link"])[1]'.</msg>
+<arg>xpath=(//a[@id="main-link"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:59:01.959206" elapsed="0.100014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:03.063205" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:02.059851" elapsed="1.003541"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:03.064486" level="INFO">Clicking element 'xpath=//*[@id="tabsContent"]/yt-tab-group-shape/div[1]/yt-tab-shape[1]/div[1]'.</msg>
+<arg>xpath=//*[@id="tabsContent"]/yt-tab-group-shape/div[1]/yt-tab-shape[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:59:03.064113" elapsed="0.076440"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:04.142867" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:03.142439" elapsed="1.000594"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="tabsContent"]/yt-tab-group-shape/div[1]/yt-tab-shape[2]/div[1]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T14:59:04.143415" elapsed="0.025028"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:04.168849" level="INFO">Clicking element 'xpath=//*[@id="tabsContent"]/yt-tab-group-shape/div[1]/yt-tab-shape[2]/div[1]'.</msg>
+<arg>xpath=//*[@id="tabsContent"]/yt-tab-group-shape/div[1]/yt-tab-shape[2]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:59:04.168667" elapsed="0.066328"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:05.237747" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:04.237242" elapsed="1.000678"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//yt-formatted-string[text()="Popular"]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T14:59:05.238292" elapsed="0.133282"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:05.372118" level="INFO">Clicking element 'xpath=//yt-formatted-string[text()="Popular"]'.</msg>
+<arg>xpath=//yt-formatted-string[text()="Popular"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:59:05.371881" elapsed="0.182270"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:06.556530" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:05.554897" elapsed="1.001944"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contents"]/ytd-rich-item-renderer[1]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T14:59:06.557489" elapsed="0.026650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:06.584592" level="INFO">Clicking element 'xpath=//*[@id="contents"]/ytd-rich-item-renderer[1]'.</msg>
+<arg>xpath=//*[@id="contents"]/ytd-rich-item-renderer[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T14:59:06.584368" elapsed="0.094078"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:08.681896" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:06.678842" elapsed="2.003450"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:09.282597" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-27T14:59:09.283321" level="FAIL">Element with locator 'xpath=//button[contains(@class, 'ytp-ad-skip-button')]' not found.</msg>
+<arg>xpath=//button[contains(@class, 'ytp-ad-skip-button')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-27T14:59:08.683700" elapsed="0.605699">Element with locator 'xpath=//button[contains(@class, 'ytp-ad-skip-button')]' not found.</status>
+</kw>
+<msg time="2025-02-27T14:59:09.289702" level="INFO">${skip_ad} = False</msg>
+<var>${skip_ad}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=//button[contains(@class, 'ytp-ad-skip-button')]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-27T14:59:08.683125" elapsed="0.606636"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${skip_ad}</arg>
+<arg>Click Element</arg>
+<arg>xpath=//button[contains(@class, 'ytp-ad-skip-button')]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-27T14:59:09.290321" elapsed="0.000256"/>
+</kw>
+<kw name="Run Keyword Unless" owner="BuiltIn">
+<msg time="2025-02-27T14:59:09.290981" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, 'ytp-ad-player-overlay')]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-02-27T14:59:09.291645" elapsed="0.020746"/>
+</kw>
+<arg>${skip_ad}</arg>
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>xpath=//div[contains(@class, 'ytp-ad-player-overlay')]</arg>
+<arg>timeout=30s</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<status status="PASS" start="2025-02-27T14:59:09.290925" elapsed="0.022560"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:09.316505" level="INFO">Sending key(s) ('f',) to page.</msg>
+<msg time="2025-02-27T14:59:09.316958" level="INFO">Sending key f</msg>
+<arg>None</arg>
+<arg>f</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-27T14:59:09.314815" elapsed="0.411420"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:19.726968" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:09.726500" elapsed="10.000640"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:20.514927" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/youtube_video.png"&gt;&lt;img src="../screenshots/youtube_video.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_PATH}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-27T14:59:19.727680" elapsed="0.787397"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2025-02-27T14:59:20.515814" level="INFO" html="true">File '&lt;a href="file:///Users/karn.u/YouTube_Automation/screenshots/youtube_video.png"&gt;/Users/karn.u/YouTube_Automation/screenshots/youtube_video.png&lt;/a&gt;' exists.</msg>
+<arg>${SCREENSHOT_PATH}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2025-02-27T14:59:20.515425" elapsed="0.000487"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-27T14:59:20.516651" level="INFO">Sending key(s) ('escape',) to page.</msg>
+<msg time="2025-02-27T14:59:20.516771" level="INFO">Sending keys escape</msg>
+<arg>None</arg>
+<arg>escape</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-27T14:59:20.516178" elapsed="0.031761"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-27T14:59:22.548999" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-27T14:59:20.548269" elapsed="2.001181"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-27T14:59:22.550110" elapsed="0.616416"/>
+</kw>
+<status status="PASS" start="2025-02-27T14:58:49.554006" elapsed="33.613059"/>
+</test>
+<status status="PASS" start="2025-02-27T14:58:49.269383" elapsed="33.898372"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Youtube">Test Youtube</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-27T14:59:09.290981" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+</errors>
+</robot>
